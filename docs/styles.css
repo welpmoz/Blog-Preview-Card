@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+    /* Colores */
+    --yellow: hsl(47, 88%, 63%);
+    --white: white;
+    --grey: hsl(0, 0%, 50%);
+    --black: hsl(0, 0%, 7%);
+
+    /* Tipografía */
+    --font-family: 'Figtree', sans-serif;
+    --font-size-base: 16px;
+    --font-size-large: 24px;
+
+    font-size: 62.5%;
+    font-family: var(--font-family);
+}
+
+.color-black {
+    color: var(--black);
+}
+
+.color-grey {
+    color: var(--grey);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--yellow);
+    position: relative;
+    grid-template-columns: repeat(4, 7.2rem);
+    gap: 3.2rem;
+    /* margin: 2.4rem; */
+}
+
+.text-preset-1 {
+    font-weight: bolder;
+    font-size: 2.4rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.text-preset-2 {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.text-preset-3 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.text-preset-3-bold {
+    font-weight: bolder;
+    font-size: 1.4rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.card {
+    grid-column: 1 / 5;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 2.4rem;
+    border-radius: 20px;
+}
+
+.blog-image > img {
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.content > .category {
+    align-self: flex-start;
+    background-color: var(--yellow);
+    border-radius: 4px;
+    padding: 0.4rem 1.2rem;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.author > img {
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+/* Not necessary */
+/* @media (min-width: 625px) {
+    body {
+        grid-template-columns: repeat(6, 7.2rem);
+    }
+
+    .card {
+        grid-column: 2 / 6;
+    }
+}
+
+@media (min-width: 895px) {
+    body {
+        grid-template-columns: repeat(8, 7.2rem);
+    }
+
+    .card {
+        grid-column: 3 / 7;
+    }
+}
+
+@media (min-width: 1250px) {
+    body {
+        grid-template-columns: repeat(12, 7.2rem);
+    }
+
+    .card {
+        grid-column: 5 / 9;
+    }
+} */
